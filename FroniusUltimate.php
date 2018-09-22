@@ -1,7 +1,7 @@
 <?php
 
 
-//Originally authored by Terence Eden. https://shkspr.mobi/blog/2014/11/fronius-and-pvoutput/ // Smart Meter support added by B33t - https://github.com/b33st/Fronius_PVOutput_Uploader // Added 3Phase support and every option available from the API's, Easier configurability and works with or without threephase and meter. Pimped by myself B-Man 
+//Originally authored by Terence Eden. https://shkspr.mobi/blog/2014/11/fronius-and-pvoutput/ // Smart Meter support added by B33t - https://github.com/b33st/Fronius_PVOutput_Uploader // Added 3Phase support and every option available from the API's, Easier configurability and works with or without threephase and meter. Pimped by myself B-Man https://github.com/B-Mqn/FroniusPHPUltimate/edit/master/FroniusUltimate.php
 
 
 // Configuration Options
