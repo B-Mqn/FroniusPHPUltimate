@@ -142,7 +142,7 @@ $pvOutputURL = $pvOutputApiURL
                 . "&v10=" . $$v10
                 . "&v11=" . $$v11
                 . "&v12=" . $$v12;
-//file_get_contents(trim($pvOutputURL));													
+file_get_contents(trim($pvOutputURL));													
 
 
 //Print Values to Console
@@ -186,7 +186,7 @@ $pvOutputURL = $pvOutputApiURL
                 . "&v10=" . $$v10
                 . "&v11=" . $$v11
                 . "&v12=" . $$v12;
-//file_get_contents(trim($pvOutputURL));													
+file_get_contents(trim($pvOutputURL));													
 
 
 //Print Values to Console
