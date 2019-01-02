@@ -1,24 +1,28 @@
 <?php
 
 
-//Originally authored by Terence Eden. https://shkspr.mobi/blog/2014/11/fronius-and-pvoutput/ // Smart Meter support added by B33t - https://github.com/b33st/Fronius_PVOutput_Uploader // Added 3Phase support and every option available from the API's, Easier configurability and works with or without threephase and meter. Pimped by myself B-Man https://github.com/B-Mqn/FroniusPHPUltimate/edit/master/FroniusUltimate.php
+// Originally authored by Terence Eden. https://shkspr.mobi/blog/2014/11/fronius-and-pvoutput/ 
+// Smart Meter support added by B33st - https://github.com/b33st/Fronius_PVOutput_Uploader 
+// Added 3Phase support and every API option, Easier configurability and works with or without threephase and meter. Pimped by myself B-Man https://github.com/B-Mqn/FroniusPHPUltimate/edit/master/FroniusUltimate.php
+
+// Cron  setup// | crontab -e | */5 * * * * /usr/bin/php /home/pi/froniusUltimate.php
 
 
 // Configuration Options
-$dataManagerIP = "192.168.1.100";							//Fronius Lan IP Address
-$dataFile = "fronius";												//WTF is this and how does it get added?
-$pvOutputApiKEY = "PVoutputAPI";
-$pvOutputSID = "SystemID";
-//															//add Timezone info here??		
+$dataManagerIP = "192.168.1.100";	//Fronius Lan IP Address
+$dataFile = "fronius";											//this is for meter data but i dont have meter
+$pvOutputApiKEY = "PVoutputAPI";	//PVOutput Api Key found in https://pvoutput.org/account.jsp					
+$pvOutputSID = "SystemID";		//Your pvoutput SystemID
+//													//add Timezone info here??		
 $country = "Australia";
 $capitalCity ="Adelaide";			
 
 
 
 //Settings that can be Used in V7-V12	
-// Inverter					inverterVoltageLive		inverterDCVoltage	inverterHz	inverterACAmps	inverterDCAmps
+// Inverter					inverterVoltageLive	inverterDCVoltage	inverterHz	inverterACAmps	inverterDCAmps
 // ThreePhase  				phase1Volts	phase2Volts	phase3Volts	phase1Amps	phase2Amps	phase3Amps	
-// Meter					meterExportDayTotal		meterImportDayTotal		meterPowerLive	meterPowerLiveExport	meterPowerLiveImport
+// Meter					meterExportDayTotal	meterImportDayTotal	meterPowerLive	meterPowerLiveExport	meterPowerLiveImport
 
 $v7 = "phase1Volts";
 $v8 = "phase2Volts";
